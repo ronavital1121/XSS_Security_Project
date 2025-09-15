@@ -23,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@playwright/test": "^1.52.0",
+    "@types/node": "^24.4.0",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@typescript-eslint/eslint-plugin": "^8.30.1",
