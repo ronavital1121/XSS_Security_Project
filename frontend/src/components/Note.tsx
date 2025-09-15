@@ -56,7 +56,7 @@ const Note = ({ note, removeNoteFromCache }: NoteProps) => {
         config
       );
 
-      const updatedNote = response.data;
+      const updatedNote = response.data as NoteType;
       dispatch({ type: 'UPDATE_NOTE', payload: updatedNote });
       notify('Note updated', dispatch);
       setIsEditing(false);

@@ -54,7 +54,7 @@ const NoteList = () => {
 
       const updatedCache = { ...notesCache };
       responses.forEach(({ page, data, total: totalStr }) => {
-        updatedCache[page] = data.map((note: any) => ({
+        updatedCache[page] = (data as any[]).map((note: any) => ({
           ...note,
           author: note.author,
         }));
@@ -125,7 +125,7 @@ const NoteList = () => {
         },
       });
 
-      const savedNote = response.data;
+      const savedNote = response.data as NoteType;
       const normalizedNote = {
         ...savedNote,
         author: savedNote.author,

@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useContext, ReactNode } from 'react';
-import { notesReducer, NotesState, NotesAction } from './NotesReducer.tsx';
+import { notesReducer, NotesState, NotesAction } from './NotesReducer';
 
 const initialState: NotesState = {
   notes: [],
